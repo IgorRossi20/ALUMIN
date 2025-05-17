@@ -1,6 +1,6 @@
 :root {
     --primary-color: #2c3e50;
-    --secondary-color: #25D366; /* Cor do WhatsApp */
+    --secondary-color: #25D366;
     --accent-color: #e74c3c;
     --text-color: #333;
     --light-bg: #f8f9fa;
@@ -175,7 +175,7 @@ nav {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.15rem;
+    font-size: 0.97rem;
     transition: color 0.2s;
 }
 
@@ -218,7 +218,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 7px;
-    font-size: 1.15rem;
+    font-size: 0.97rem;
     font-weight: 700;
     padding: 4px 8px;
 }
@@ -235,14 +235,7 @@ nav {
     transition: background 0.18s, color 0.18s;
 }
 
-.socials-dropdown > a {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    font-size: 1.35rem;
-    padding: 4px 8px;
-}
+
 
 .dropdown-content a {
     display: flex;
@@ -306,8 +299,12 @@ nav {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--text-color);
+    background: #F2EFE8;
     transition: 0.3s;
+}
+.hamburger:active span,
+.hamburger:focus span {
+    background: #F2EFE8;
 }
 
 /* Hero Section */
@@ -621,6 +618,85 @@ nav {
     background-color: #21bf53;
 }
 
+/* SOBRE NÓS - Estilo Responsivo */
+.sobre-main {
+    padding: 2.5rem 2vw 3rem 2vw;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.06);
+}
+.sobre-title {
+    font-size: 2.5rem;
+    color: #344454;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.sobre-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 2rem auto 2.5rem auto;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+}
+.sobre-section {
+    font-size: 1.16rem;
+    line-height: 1.7;
+    color: #222;
+    padding: 0 0.7rem;
+}
+.sobre-section p {
+    margin-bottom: 1.3rem;
+}
+.sobre-subtitle {
+    font-size: 1.35rem;
+    color: #344454;
+    margin: 2.2rem 0 1rem 0;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    border-left: 4px solid #344454;
+    padding-left: 0.7rem;
+}
+@media (max-width: 900px) {
+    .sobre-main {
+        padding: 2.2rem 1vw 2.2rem 1vw;
+        max-width: 98vw;
+    }
+    .sobre-img {
+        max-width: 98vw;
+    }
+}
+@media (max-width: 600px) {
+    .sobre-main {
+        padding: 1.2rem 0.5rem 2rem 0.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(44,62,80,0.09);
+    }
+    .sobre-title {
+        font-size: 1.45rem;
+        margin-bottom: 1.1rem;
+    }
+    .sobre-img {
+        margin: 1.2rem auto 1.3rem auto;
+        border-radius: 8px;
+    }
+    .sobre-section {
+        font-size: 1.02rem;
+        padding: 0 0.1rem;
+    }
+    .sobre-subtitle {
+        font-size: 1.07rem;
+        margin: 1.2rem 0 0.7rem 0;
+        border-left-width: 3px;
+        padding-left: 0.5rem;
+    }
+}
+
 /* Footer */
 footer {
     background: var(--primary-color);
@@ -685,7 +761,7 @@ footer {
     padding-left: 2vw;
     padding-right: 2vw;
   }
-}
+
 
 @media (max-width: 768px) {
   nav {
@@ -903,7 +979,7 @@ footer {
         padding-left: 2vw;
         padding-right: 2vw;
     }
-}
+
 
 @media (max-width: 768px) {
     .hero {
@@ -1037,27 +1113,71 @@ footer {
 }
 
 @media (max-width: 768px) {
+    nav {
+        padding-left: 16px;
+        padding-right: 16px;
+        justify-content: space-between;
+        align-items: center;
+        height: 46px;
+        min-height: 38px;
+        display: flex;
+    }
+    .logo {
+        padding-left: 0;
+        margin-right: auto;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+    }
+    .alumin-header-logo-block {
+        align-items: center;
+        gap: 8px;
+    }
     .hamburger {
         display: flex;
         z-index: 3001;
+        margin-left: auto;
+        padding-right: 10px;
+        align-items: center;
+        height: 46px;
+        min-height: 38px;
+        justify-content: center;
+    }
+    .hamburger span {
+        display: block;
+        margin: 1.5px 0;
     }
 
     .nav-links {
         display: none;
         position: fixed;
-        top: 64px;
+        top: 38px; /* igual à altura real do nav/header em mobile */
         left: 0;
         width: 100vw;
-        height: calc(100vh - 64px);
         background: #2c3e50;
-        padding: 2rem 0 0 0;
+        margin: 0;
+        border: none;
+        padding: 1.3rem 3vw 1.7rem 3vw;
         flex-direction: column;
         gap: 1.5rem;
         box-shadow: 0 8px 32px 0 rgba(44,62,80,0.18);
         z-index: 3000;
         align-items: center;
         justify-content: flex-start;
+        border-radius: 18px;
+        max-height: 75vh;
+        min-height: unset;
+        height: auto;
         transition: all 0.25s;
+        overflow-y: auto;
+        box-shadow: 0 8px 32px 0 rgba(44,62,80,0.18);
+        margin-top: 10px;
+        margin-bottom: 16px;
+        padding-bottom: 2.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 94vw;
+
     }
 
     .nav-links.active {
