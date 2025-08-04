@@ -3,70 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos - ALUMIN</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Projetos - ALUMIN Esquadrias de Alumínio</title>
+    <meta name="description" content="Conheça os projetos realizados pela ALUMIN, referência em esquadrias de alumínio com excelência e qualidade.">
+    <link rel="stylesheet" href="styles-new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="LOGO.png" type="image/png">
 </head>
 <body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5511962113685" class="whatsapp-float" target="_blank" aria-label="Contato via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Certifique-se de que o cabeçalho em projetos.html seja idêntico ao de index.html, e defina 'Projetos' como ativo. -->
     <header>
         <nav>
             <div class="logo">
-                <div class="alumin-header-logo-block">
-                    <svg class="alumin-logo-svg" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="5" y="5" width="60" height="60" stroke="#F2EFE8" stroke-width="6" fill="none"/>
-                        <rect x="35" y="5" width="6" height="60" fill="#F2EFE8"/>
-                        <rect x="5" y="32" width="60" height="6" fill="#F2EFE8"/>
-                    </svg>
-                    <div class="alumin-header-textblock">
-                        <span class="alumin-header-text">ALUMIN</span>
-                        <span class="alumin-header-sub">ESQUADRIAS DE ALUMÍNIO</span>
+                <a href="index.html#home" aria-label="Ir para o início">
+                    <div class="alumin-header-logo-block">
+                        <img src="LOGO.png" alt="Logo Alumin" class="logo-icon">
+                        <img src="ALUMINPNG.png" alt="Alumin Esquadrias" class="logo-text">
                     </div>
-                </div>
+                </a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#produtos">Produtos</a></li>
                 <li><a href="index.html#servicos">Serviços</a></li>
-                <li><a href="projetos.html" class="active">Projetos</a></li>
-                <li><a href="index.html#orcamento">Orçamento</a></li>
-                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="index.html#depoimentos">Depoimentos</a></li>
+                <li class="active"><a href="projetos.html">Projetos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="https://wa.me/5511962113685?text=Oi%2C%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" class="nav-highlight">Orçamento</a></li>
+                <li class="socials-dropdown">
+                    <a href="#redes" id="socials-toggle">Redes Sociais <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://wa.me/5511962113685" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="https://instagram.com/alumin_esquadrias" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    </ul>
+                </li>
             </ul>
+            <div class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
-    <main style="padding-top: 90px; min-height: 70vh; background: #f8f9fa;">
-        <section class="projetos">
-            <h2>Nossos Projetos</h2>
-            <p class="projetos-description">
-                Conheça um pouco dos projetos de esquadrias sob medida realizados pela ALUMIN. Cada obra é única, feita com atenção aos detalhes e de acordo com a necessidade de cada cliente. Confira algumas fotos de nossos trabalhos:
-            </p>
-            <div class="projetos-grid">
-                <div class="projeto-card"><img src="https://via.placeholder.com/400x250?text=Projeto+1" alt="Projeto 1"><span>Residência Moderna</span></div>
-                <div class="projeto-card"><img src="https://via.placeholder.com/400x250?text=Projeto+2" alt="Projeto 2"><span>Loja Comercial</span></div>
-                <div class="projeto-card"><img src="https://via.placeholder.com/400x250?text=Projeto+3" alt="Projeto 3"><span>Edifício Empresarial</span></div>
-                <div class="projeto-card"><img src="https://via.placeholder.com/400x250?text=Projeto+4" alt="Projeto 4"><span>Varanda Gourmet</span></div>
-                <div class="projeto-card"><img src="https://via.placeholder.com/400x250?text=Projeto+5" alt="Projeto 5"><span>Porta de Correr</span></div>
-                <div class="projeto-card"><img src="https://via.placeholder.com/400x250?text=Projeto+6" alt="Projeto 6"><span>Fachada em Alumínio</span></div>
+
+    <main>
+        <div class="projetos-main">
+            <h1 class="projetos-title">Nossos Projetos</h1>
+            
+            <div class="projetos-intro" data-aos="fade-up">
+                <p>Conheça alguns dos nossos trabalhos realizados. Cada projeto é único e desenvolvido com atenção aos detalhes, qualidade superior e compromisso com a satisfação do cliente.</p>
             </div>
-        </section>
+            
+            <div class="projetos-filtro" data-aos="fade-up">
+                <button class="filtro-btn active" data-filter="todos">Todos</button>
+                <button class="filtro-btn" data-filter="residencial">Residencial</button>
+                <button class="filtro-btn" data-filter="comercial">Comercial</button>
+                <button class="filtro-btn" data-filter="industrial">Industrial</button>
+            </div>
+            
+            <div class="projetos-grid">
+                <!-- Projeto 1 -->
+                <div class="projeto-card" data-categoria="residencial" data-aos="fade-up">
+                    <div class="projeto-img-container">
+                        <img src="PHOTOS/Janela.jpeg" alt="Projeto Residencial - Janelas Panorâmicas" loading="lazy">
+                        <div class="projeto-overlay">
+                            <button class="ver-projeto-btn" data-projeto="projeto1">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Residência Moderna</h3>
+                        <p>Janelas panorâmicas com perfil de alumínio preto</p>
+                        <span class="projeto-tag">Residencial</span>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="projeto-card" data-categoria="comercial" data-aos="fade-up" data-aos-delay="100">
+                    <div class="projeto-img-container">
+                        <img src="PHOTOS/PORTA.jpg" alt="Projeto Comercial - Fachada em Vidro" loading="lazy">
+                        <div class="projeto-overlay">
+                            <button class="ver-projeto-btn" data-projeto="projeto2">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Centro Empresarial</h3>
+                        <p>Fachada em vidro temperado com estrutura em alumínio</p>
+                        <span class="projeto-tag">Comercial</span>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="projeto-card" data-categoria="residencial" data-aos="fade-up" data-aos-delay="200">
+                    <div class="projeto-img-container">
+                        <img src="PHOTOS/GUARDACORPO1.jpg" alt="Projeto Residencial - Guarda-corpo em Vidro" loading="lazy">
+                        <div class="projeto-overlay">
+                            <button class="ver-projeto-btn" data-projeto="projeto3">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Residência Alto Padrão</h3>
+                        <p>Guarda-corpo em vidro temperado com fixação em alumínio</p>
+                        <span class="projeto-tag">Residencial</span>
+                    </div>
+                </div>
+                
+                <!-- Projeto 4 -->
+                <div class="projeto-card" data-categoria="industrial" data-aos="fade-up">
+                    <div class="projeto-img-container">
+                        <img src="PHOTOS/JANELA4.jpg" alt="Projeto Industrial - Esquadrias Especiais" loading="lazy">
+                        <div class="projeto-overlay">
+                            <button class="ver-projeto-btn" data-projeto="projeto4">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Galpão Industrial</h3>
+                        <p>Esquadrias especiais com isolamento térmico e acústico</p>
+                        <span class="projeto-tag">Industrial</span>
+                    </div>
+                </div>
+                
+                <!-- Projeto 5 -->
+                <div class="projeto-card" data-categoria="comercial" data-aos="fade-up" data-aos-delay="100">
+                    <div class="projeto-img-container">
+                        <img src="PHOTOS/PORTA4.jpg" alt="Projeto Comercial - Portas Automáticas" loading="lazy">
+                        <div class="projeto-overlay">
+                            <button class="ver-projeto-btn" data-projeto="projeto5">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Shopping Center</h3>
+                        <p>Portas automáticas deslizantes com sensor de presença</p>
+                        <span class="projeto-tag">Comercial</span>
+                    </div>
+                </div>
+                
+                <!-- Projeto 6 -->
+                <div class="projeto-card" data-categoria="residencial" data-aos="fade-up" data-aos-delay="200">
+                    <div class="projeto-img-container">
+                        <img src="PHOTOS/PORTA7.jpg" alt="Projeto Residencial - Fechamento de Área" loading="lazy">
+                        <div class="projeto-overlay">
+                            <button class="ver-projeto-btn" data-projeto="projeto6">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Condomínio Fechado</h3>
+                        <p>Fechamento de área gourmet com vidro temperado e perfis de alumínio</p>
+                        <span class="projeto-tag">Residencial</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projetos-cta" data-aos="fade-up">
+                <h2>Quer transformar seu espaço?</h2>
+                <p>Entre em contato conosco e descubra como podemos ajudar a realizar seu projeto com qualidade e excelência.</p>
+                <a href="https://wa.me/5511962113685?text=Oi%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20meu%20projeto." class="cta-button" target="_blank" rel="noopener noreferrer">Solicite um Orçamento</a>
+            </div>
+        </div>
     </main>
+
+    <!-- Modais de Projetos -->
+    <div id="projeto-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Conteúdo do modal será inserido via JavaScript -->
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>ALUMIN</h3>
-                <p>Esquadrias de Alumínio de Qualidade</p>
+                <p>Esquadrias de Alumínio de Alta Qualidade desde 2010. Compromisso com excelência e satisfação do cliente.</p>
             </div>
             <div class="footer-section">
                 <h3>Contato</h3>
-                <p><i class="fas fa-phone"></i> (XX) XXXX-XXXX</p>
+                <p><i class="fas fa-phone"></i> (11) 96211-3685</p>
                 <p><i class="fas fa-envelope"></i> contato@alumin.com.br</p>
+                <p><i class="fas fa-map-marker-alt"></i> R. Sete de Setembro, 777 - Centro, Salto - SP</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horário de Atendimento</h3>
+                <p><i class="far fa-clock"></i> Segunda a Sexta: 8h às 18h</p>
+                <p><i class="far fa-clock"></i> Sábado: 8h às 12h</p>
             </div>
             <div class="footer-section">
                 <h3>Redes Sociais</h3>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5511962113685" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/alumin_esquadrias" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
@@ -74,5 +209,292 @@
             <p>&copy; 2025 ALUMIN. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Dados dos projetos
+        const projetosData = {
+            projeto1: {
+                titulo: "Residência Moderna",
+                categoria: "Residencial",
+                descricao: "Projeto de janelas panorâmicas com perfil de alumínio preto para uma residência moderna em condomínio de alto padrão. As esquadrias foram projetadas para maximizar a entrada de luz natural e proporcionar uma vista ampla para o jardim.",
+                caracteristicas: [
+                    "Perfil de alumínio preto fosco",
+                    "Vidro duplo com isolamento térmico e acústico",
+                    "Sistema de abertura deslizante com trilhos embutidos",
+                    "Fechaduras de segurança multipontos"
+                ],
+                imagens: [
+                    "PHOTOS/JANELA.jpg",
+                    "PHOTOS/JANELA.jpg",
+                    "PHOTOS/JANELA.jpg"
+                ],
+                cliente: "Família Silva",
+                local: "Alphaville, SP",
+                ano: "2023"
+            },
+            projeto2: {
+                titulo: "Centro Empresarial",
+                categoria: "Comercial",
+                descricao: "Fachada em vidro temperado com estrutura em alumínio para um centro empresarial moderno. O projeto foi desenvolvido para proporcionar elegância, durabilidade e eficiência energética.",
+                caracteristicas: [
+                    "Fachada pele de vidro com estrutura em alumínio",
+                    "Vidro refletivo com controle solar",
+                    "Sistema de ventilação integrado",
+                    "Portas automáticas com sensor de presença"
+                ],
+                imagens: [
+                    "PHOTOS/PORTA.jpg",
+                    "PHOTOS/PORTA.jpg",
+                    "PHOTOS/PORTA.jpg"
+                ],
+                cliente: "Grupo Empresarial XYZ",
+                local: "São Paulo, SP",
+                ano: "2022"
+            },
+            projeto3: {
+                titulo: "Residência Alto Padrão",
+                categoria: "Residencial",
+                descricao: "Guarda-corpo em vidro temperado com fixação em alumínio para uma residência de alto padrão. O projeto foi desenvolvido para proporcionar segurança sem comprometer a estética e a vista panorâmica.",
+                caracteristicas: [
+                    "Vidro temperado de 10mm",
+                    "Fixação em alumínio anodizado",
+                    "Sistema de fixação invisível",
+                    "Acabamento polido nas bordas do vidro"
+                ],
+                imagens: [
+                    "PHOTOS/GUARDACORPO.jpg",
+                    "PHOTOS/GUARDACORPO.jpg",
+                    "PHOTOS/GUARDACORPO.jpg"
+                ],
+                cliente: "Família Oliveira",
+                local: "Campinas, SP",
+                ano: "2023"
+            },
+            projeto4: {
+                titulo: "Galpão Industrial",
+                categoria: "Industrial",
+                descricao: "Esquadrias especiais com isolamento térmico e acústico para um galpão industrial. O projeto foi desenvolvido para atender às necessidades específicas do cliente, proporcionando conforto térmico e acústico em um ambiente industrial.",
+                caracteristicas: [
+                    "Perfil de alumínio reforçado",
+                    "Vidro laminado com isolamento acústico",
+                    "Sistema de ventilação controlada",
+                    "Tratamento anticorrosivo para ambientes agressivos"
+                ],
+                imagens: [
+                    "PHOTOS/JANELA.jpg",
+                    "PHOTOS/JANELA.jpg",
+                    "PHOTOS/JANELA.jpg"
+                ],
+                cliente: "Indústria ABC",
+                local: "Sorocaba, SP",
+                ano: "2021"
+            },
+            projeto5: {
+                titulo: "Shopping Center",
+                categoria: "Comercial",
+                descricao: "Portas automáticas deslizantes com sensor de presença para um shopping center. O projeto foi desenvolvido para proporcionar praticidade, segurança e elegância em um ambiente de alto fluxo de pessoas.",
+                caracteristicas: [
+                    "Sistema automático com sensor de presença",
+                    "Vidro temperado de 10mm",
+                    "Perfil de alumínio anodizado",
+                    "Sistema de segurança anti-esmagamento"
+                ],
+                imagens: [
+                    "PHOTOS/PORTA.jpg",
+                    "PHOTOS/PORTA.jpg",
+                    "PHOTOS/PORTA.jpg"
+                ],
+                cliente: "Shopping Center Plaza",
+                local: "Jundiaí, SP",
+                ano: "2022"
+            },
+            projeto6: {
+                titulo: "Condomínio Fechado",
+                categoria: "Residencial",
+                descricao: "Fechamento de área gourmet com vidro temperado e perfis de alumínio para um condomínio fechado. O projeto foi desenvolvido para proporcionar proteção contra intempéries sem comprometer a integração com o ambiente externo.",
+                caracteristicas: [
+                    "Sistema de fechamento com vidro temperado de 8mm",
+                    "Perfil de alumínio anodizado",
+                    "Sistema deslizante com trilhos embutidos",
+                    "Fechaduras de segurança"
+                ],
+                imagens: [
+                    "PHOTOS/GUARDACORPO.jpg",
+                    "PHOTOS/GUARDACORPO.jpg",
+                    "PHOTOS/GUARDACORPO.jpg"
+                ],
+                cliente: "Condomínio Reserva Verde",
+                local: "Itu, SP",
+                ano: "2023"
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar AOS (Animate On Scroll)
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out',
+                once: true
+            });
+            
+            // Menu mobile
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+            
+            // Dropdown de redes sociais
+            const socialsToggle = document.getElementById('socials-toggle');
+            const socialsDropdown = document.querySelector('.socials-dropdown');
+
+            if (socialsToggle && socialsDropdown) {
+                socialsToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    socialsDropdown.classList.toggle('open');
+                    e.stopPropagation();
+                });
+
+                // Fecha o dropdown ao clicar fora
+                window.addEventListener('click', function(e) {
+                    if (socialsDropdown.classList.contains('open') && !socialsDropdown.contains(e.target)) {
+                        socialsDropdown.classList.remove('open');
+                    }
+                });
+            }
+            
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('nav');
+                if (window.scrollY > 50) {
+                    header.classList.add('nav-scrolled');
+                } else {
+                    header.classList.remove('nav-scrolled');
+                }
+            });
+            
+            // Filtro de projetos
+            const filtroBtns = document.querySelectorAll('.filtro-btn');
+            const projetoCards = document.querySelectorAll('.projeto-card');
+            
+            filtroBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filtroBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    const filtro = btn.getAttribute('data-filter');
+                    
+                    projetoCards.forEach(card => {
+                        if (filtro === 'todos' || card.getAttribute('data-categoria') === filtro) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Modal de projetos
+            const modal = document.getElementById('projeto-modal');
+            const modalBody = modal.querySelector('.modal-body');
+            const closeModal = modal.querySelector('.close-modal');
+            const verProjetoBtns = document.querySelectorAll('.ver-projeto-btn');
+            
+            verProjetoBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const projetoId = btn.getAttribute('data-projeto');
+                    const projeto = projetosData[projetoId];
+                    
+                    if (projeto) {
+                        // Criar conteúdo do modal
+                        let modalContent = `
+                            <div class="projeto-modal-header">
+                                <h2>${projeto.titulo}</h2>
+                                <span class="projeto-tag">${projeto.categoria}</span>
+                            </div>
+                            <div class="projeto-modal-gallery">
+                        `;
+                        
+                        // Adicionar imagens
+                        projeto.imagens.forEach(img => {
+                            modalContent += `<img src="${img}" alt="${projeto.titulo}" loading="lazy">`;
+                        });
+                        
+                        modalContent += `
+                            </div>
+                            <div class="projeto-modal-info">
+                                <div class="projeto-modal-descricao">
+                                    <h3>Descrição</h3>
+                                    <p>${projeto.descricao}</p>
+                                </div>
+                                <div class="projeto-modal-caracteristicas">
+                                    <h3>Características</h3>
+                                    <ul>
+                        `;
+                        
+                        // Adicionar características
+                        projeto.caracteristicas.forEach(caracteristica => {
+                            modalContent += `<li>${caracteristica}</li>`;
+                        });
+                        
+                        modalContent += `
+                                    </ul>
+                                </div>
+                                <div class="projeto-modal-detalhes">
+                                    <h3>Detalhes do Projeto</h3>
+                                    <p><strong>Cliente:</strong> ${projeto.cliente}</p>
+                                    <p><strong>Local:</strong> ${projeto.local}</p>
+                                    <p><strong>Ano:</strong> ${projeto.ano}</p>
+                                </div>
+                                <div class="projeto-modal-cta">
+                                    <a href="https://wa.me/5511962113685?text=Oi%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20um%20projeto%20similar%20ao%20${encodeURIComponent(projeto.titulo)}." class="cta-button" target="_blank" rel="noopener noreferrer">Solicitar Orçamento Similar</a>
+                                </div>
+                            </div>
+                        `;
+                        
+                        modalBody.innerHTML = modalContent;
+                        modal.style.display = 'block';
+                        document.body.style.overflow = 'hidden'; // Impede rolagem da página
+                    }
+                });
+            });
+            
+            // Fechar modal
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Permite rolagem da página
+            });
+            
+            // Fechar modal ao clicar fora
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto'; // Permite rolagem da página
+                }
+            });
+            
+            // Fechar modal com tecla ESC
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.style.display === 'block') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto'; // Permite rolagem da página
+                }
+            });
+        });
+    </script>
 </body>
 </html>
